@@ -68,10 +68,12 @@ h3 {
 
 .background {
   position: relative;
+  overflow: hidden;
 }
 
 .background::before {
   content: '';
+  z-index: -1;
   background-image: var(--bg-img);
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,6 +97,7 @@ h3 {
 }
 .main__wrapper:before {
   content: '';
+  z-index: -1;
   background-image: url('../img/main.png');
   background-repeat: no-repeat;
   position: absolute;
@@ -210,3 +213,39 @@ h3 {
 }
 
 /*End second section*/
+
+.section-third__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.section-third__img {
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.section-third__text-subtitle {
+  font-family: var(--title-font);
+  color: v(--translucent-dark-color);
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+
+.section-third__text-annotation {
+  font-family: var(--title-font);
+  font-size: 34px;
+  line-height: 1;
+  padding-top: 30px;
+}
+
+.section-third__sub-title {
+  background-color: var(--brown-color);
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  padding-left: 10px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
