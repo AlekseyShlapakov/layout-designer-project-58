@@ -116,7 +116,7 @@ h3 {
   margin-right: 30px;
 }
 
-.section__content_right, .section__content_left {
+.section__content_right, .section__content_left, .footer__subscription-title, .footer__subscription--form {
   flex-grow: 1;
   flex-basis: 0;
 }
@@ -274,4 +274,59 @@ h3 {
 .section-fourth__sub-title, .section-sixth__sub-title {
   color: var(--brown-color);
   background-color: var(--white-color);
+}
+
+/*End section fouth*/
+
+/*Footer*/
+
+.footer__subscription {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px;
+  background-color: #42413C;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 17px 247px 18px 15px;
+  color: #757575;
+  font-size: 13.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  border: none;
+}
+
+input::placeholder {
+  opacity: 0.2;
+}
+
+button {
+  padding: 13px 23px;
+  background-color: #FE8A02;
+  cursor: pointer;
+  border: none;
+}
+
+.footer__subscription--form-title p {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 160%;
+}
+
+.footer__subscription--form-annotation p {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 160%;
+  text-decoration-line: underline;
 }
