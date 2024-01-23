@@ -1,25 +1,24 @@
 /** CSS STYLE **/
 
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@400;700&display=swap");
 
 :root {
-  --bg-img: url('../img/background.png');
+  --bg-img: url("../img/background.png");
   --accent-color: #fe8a02;
   --white-color: #fff;
   --translucent-white-color: #d7ccc0;
   --light-color: #f5f4f0;
-  --text-color: #2A2626;
+  --text-color: #2a2626;
   --dark-color: #42413c;
   --translucent-dark-color: #908d8b;
   --brown-color: #b09a81;
   --blue-color: #1085c5;
-  --text-font: 'Open Sans', sans-serif;
-  --title-font: 'Neucha', cursive;
+  --text-font: "Open Sans", sans-serif;
+  --title-font: "Neucha", cursive;
 }
 
 .colortext {
-  color: #fe8a02;
+  color: var(--accent-color);
 }
 
 * {
@@ -33,15 +32,17 @@
   display: block;
 } */
 
-html, body {
+html,
+body {
   font-family: var(--text-font);
   font-size: 16px;
   line-height: 1.6em;
-  color: #2A2626;
+  color: var(--text-color);
 }
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2em;
   font-family: var(--title-font);
 }
@@ -54,7 +55,7 @@ h2 {
   font-size: 60px;
 }
 
-h3 { 
+h3 {
   font-size: 34px;
 }
 
@@ -72,7 +73,7 @@ h3 {
 }
 
 .background::before {
-  content: '';
+  content: "";
   z-index: -1;
   background-image: var(--bg-img);
   background-repeat: no-repeat;
@@ -90,15 +91,14 @@ h3 {
   height: 450px;
 }
 
-
 .main__wrapper {
   display: block;
   position: relative;
 }
 .main__wrapper:before {
-  content: '';
+  content: "";
   z-index: -1;
-  background-image: url('../img/main.png');
+  background-image: url("../img/main.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 1135px;
@@ -116,7 +116,10 @@ h3 {
   margin-right: 30px;
 }
 
-.section__content_right, .section__content_left, .footer__subscription-title, .footer__subscription--form {
+.section__content_right,
+.section__content_left,
+.footer__subscription-title,
+.footer__subscription--form {
   flex-grow: 1;
   flex-basis: 0;
 }
@@ -148,13 +151,13 @@ h3 {
 
 .video {
   position: absolute;
-  left: 23%;
   top: 41%;
+  left: 50%;
+  transform: translate(-50%, 0%);
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 /*End first section*/
-
 
 /*Second section*/
 
@@ -181,8 +184,7 @@ h3 {
 }
 
 .section-second__item:hover,
-.section-second__item:hover h3
- {
+.section-second__item:hover h3 {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
@@ -191,12 +193,6 @@ h3 {
   padding-bottom: 16px;
   color: var(--accent-color);
 }
-
-/* .section-second__item h3:hover, :focus, :active
- {
-  color: var(--white-color);
-} */
-
 
 .section-second__item:nth-child(1) {
   background-color: var(--dark-color);
@@ -213,8 +209,6 @@ h3 {
 }
 
 /*End second section*/
-
-
 
 /*Section*/
 .section__wrap {
@@ -258,20 +252,20 @@ h3 {
 
 /*End section*/
 
-
 /*Section third*/
 /*End section third*/
 
-
 /*Section fouth*/
 
-.section-fourth, .section-sixth{
+.section-fourth,
+.section-sixth {
   background-color: var(--brown-color);
   color: var(--white-color);
   z-index: 2;
 }
 
-.section-fourth__sub-title, .section-sixth__sub-title {
+.section-fourth__sub-title,
+.section-sixth__sub-title {
   color: var(--brown-color);
   background-color: var(--white-color);
 }
@@ -284,8 +278,8 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding: 55px;
-  background-color: #42413C;
-  color: #fff;
+  background-color: #42413c;
+  color: var(--white-color);
 }
 
 form {
@@ -311,22 +305,24 @@ input::placeholder {
 
 button {
   padding: 13px 23px;
-  background-color: #FE8A02;
+  background-color: var(--accent-color);
   cursor: pointer;
   border: none;
 }
 
 .footer__subscription--form-title p {
-  color: #FFF;
+  color: var(--white-color);
   font-size: 18px;
   font-style: normal;
   line-height: 160%;
 }
 
 .footer__subscription--form-annotation p {
-  color: #FFF;
+  color: var(--white-color);
   font-size: 12px;
   font-style: normal;
   line-height: 160%;
   text-decoration-line: underline;
 }
+
+/*End footer*/
